@@ -2,10 +2,13 @@
 
 import { PrismaClient } from '@prisma/client';
 import { revalidatePath } from 'next/cache';
+import { unstable_noStore as noStore } from 'next/cache';
 
 const prisma = new PrismaClient();
 
 export default async function addUser(formData: FormData){
+    noStore();
+
     const pseudo = formData.get('pseudo') as string;
     const email = formData.get('email') as string;
     const password = formData.get('pass') as string;

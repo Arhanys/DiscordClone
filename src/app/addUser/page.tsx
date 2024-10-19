@@ -2,6 +2,7 @@ import addUser from '../../Database/addUser';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
+export const dynamic = "force-dynamic";
 
 export default async function addUserScreen() {
     const users = await prisma.user.findMany();
