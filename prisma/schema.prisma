@@ -16,8 +16,8 @@ datasource db {
 
 // CUID génére un id unique
 model User {
-  id       String  @id @default(cuid())
-  email    String  @unique
-  pseudo   String?
+  id       String @id @default(cuid())
+  email    String @unique
+  pseudo   String @unique
   password String
 }
