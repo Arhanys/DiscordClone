@@ -1,12 +1,9 @@
-import TestComponent from "@/components/testComponent";
+import SideServer from "@/components/SideServer";
 
 export default function Home() {
   return (
-    <>
-      <div>
-        <h1>Home</h1>
-      </div>
-      <TestComponent />
-    </>
+    <div>
+      <SideServer />
+    </div>
   );
 }
