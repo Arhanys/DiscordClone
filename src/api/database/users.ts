@@ -1,0 +1,29 @@
+'use server';
+
+import { PrismaClient } from '@prisma/client';
+import { revalidatePath } from 'next/cache';
+
+const prisma = new PrismaClient();
+
+export default async function addUser(formData: FormData) {
+	const pseudo = formData.get('pseudo') as string;
+	const email = formData.get('email') as string;
+	const password = formData.get('pass') as string;
+
+	console.log('pseudo: ', pseudo);
+	console.log('email: ', email);
+	console.log('password', password);
+
+	try {
+		await prisma.user.create({
+			data: {
+				username: pseudo,
+				email: email,
+				password: password,
+			},
+		});
+		revalidatePath('/users');
+	} catch (error) {
+		console.error(error);
+	}
+}
