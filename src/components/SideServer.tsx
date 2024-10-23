@@ -3,33 +3,44 @@ export default function SideServer() {
     <>
       <div
         id="SideServerContainer"
-        className="bg-red-300 h-screen w-24 flex flex-col"
+        className="bg-backgroundDark h-screen w-24 flex flex-col"
       >
-        <div className="bg-blue-300 h-32 flex items-center justify-center">
-          <div className="h-2/3 aspect-square rounded-full bg-blue-800"></div>
+        <div
+          id="logoContainer"
+          className=" h-24 min-h-24 flex items-center justify-center"
+        >
+          <div className="h-2/3 aspect-square rounded-full bg-darkRed"></div>
         </div>
-        <div className="bg-black w-1/2 h-1 mx-auto mb-2"></div>
-        <ul className="flex flex-col gap-4 items-center overflow-auto no-scrollbar">
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
-          <li className="w-2/3 aspect-square bg-red-500 rounded-[50%] hover:rounded-3xl flex-shrink-0 transition-all"></li>
+        <div className="bg-accentDark w-1/2 h-1 mx-auto mb-2"></div>
+        <ul
+          id="serverList"
+          className="flex flex-col gap-4 items-center overflow-auto no-scrollbar"
+        >
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
+          <li className="w-2/3 aspect-square bg-accentRed rounded-[50%] hover:rounded-3xl hover:bg-darkRed flex-shrink-0 transition-all relative before:content-[''] before:absolute before:h-2 before:hover:h-6 before:w-[0.25rem] before:bg-offWhite before:rounded-tr-3xl before:rounded-br-3xl before:-left-4 before:top-1/2 before:-translate-y-1/2 before:transition-all"></li>
         </ul>
-        <div className="bg-blue-300 h-32 flex justify-center items-center sticky bottom-0">
-          <div className="h-2/3 aspect-square rounded-full bg-blue-500 hover:rounded-2xl shrink-0 "></div>
+        <div
+          id="discoverContainer"
+          className="h-24 min-h-24 w-24 flex justify-center items-center fixed bottom-0 bg-backgroundDark after:content-[''] after:absolute after:top-[-10%] after:h-4 after:w-full after:bg-gradient-to-t after:from-backgroundDark after:to-transparent"
+        >
+          <div className="h-2/3 aspect-square rounded-[50%] bg-accentRed hover:rounded-3xl shrink-0 transition-all"></div>
         </div>
       </div>
     </>

@@ -1,9 +1,11 @@
 import SideServer from "@/components/SideServer";
+import SideFriend from "@/components/SideFriend";
 
 export default function Home() {
   return (
-    <div>
+    <main className="flex">
       <SideServer />
-    </div>
+      <SideFriend />
+    </main>
   );
 }
