@@ -5,7 +5,11 @@ const prisma = new PrismaClient();
 export const dynamic = 'force-dynamic';
 
 export default async function addUserScreen() {
-	const users = await prisma.user.findMany();
+	const users = await prisma.user.findMany({
+		include: {
+			friends: true,
+		},
+	});
 
 	return (
 		<div className="">
@@ -42,6 +46,15 @@ export default async function addUserScreen() {
 						<span>email: {user.email}</span>
 						<span>password: {user.password}</span>
 						<span>id: {user.id}</span>
+						<span>friends:</span>
+						<ul>
+							{user.friends.map((friend) => (
+								<li key={friend.id}>
+									<span>pseudo: {friend.username}</span>
+									<span>email: {friend.email}</span>
+								</li>
+							))}
+						</ul>
 					</li>
 				))}
 			</ul>
