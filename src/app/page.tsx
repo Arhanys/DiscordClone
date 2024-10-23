@@ -1,10 +1,11 @@
-import Link from "next/link";
+import SideServer from "@/components/SideServer";
+import SideFriend from "@/components/SideFriend";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <Link href="/addUser">BOUTON</Link>
-    </div>
+    <main className="flex">
+      <SideServer />
+      <SideFriend />
+    </main>
   );
 }

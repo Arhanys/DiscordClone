@@ -8,11 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+    colors: {
+      darkRed: '#8B0000',        // Primary Dark Red
+      accentRed: '#A52A2A',      // Accent Red
+      backgroundDark: '#1C1C1C', // Dark Background
+      lightGray: '#D3D3D3',      // Light Gray for text and borders
+      offWhite: '#F0E6E6',       // Off-white for secondary text
+      highlightRed: '#FF4500',   // Highlight Red for alerts/emphasis
+      accentDark: '#2E2E2E',     // Dark Accent for dividers/shadows
     },
+  },
   },
   plugins: [],
 };
