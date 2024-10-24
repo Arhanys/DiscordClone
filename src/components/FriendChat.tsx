@@ -1,10 +1,10 @@
 import FriendIcon from "./FriendIcon";
 
-interface FriendRectangleProps {
+interface FriendChatProps {
   name: string;
 }
 
-export default function FriendRectangle({ name }: FriendRectangleProps) {
+export default function FriendChat({ name }: FriendChatProps) {
   return (
     <div className="hover:bg-accentRed w-[90%] h-12 rounded-md mx-auto flex items-center px-2 justify-between hover:cursor-pointer group mb-2">
       <div className="h-full flex items-center gap-4">

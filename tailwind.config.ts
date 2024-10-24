@@ -16,6 +16,7 @@ const config: Config = {
       offWhite: '#F0E6E6',       // Off-white for secondary text
       highlightRed: '#FF4500',   // Highlight Red for alerts/emphasis
       accentDark: '#2E2E2E',     // Dark Accent for dividers/shadows
+      thirdDark: '#313338',      // Third Dark for hover effects
     },
   },
   },

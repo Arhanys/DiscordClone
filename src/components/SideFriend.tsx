@@ -2,21 +2,26 @@
 
 import { useState } from "react";
 import FriendChat from "./FriendChat";
+import PrivateMessageModal from "./PrivateMessageModal";
 
 export default function SideFriend() {
   const [privateMessage, setPrivateMessage] = useState([{ name: "AlphA" }]);
+  const [modalStatus, setModalStatus] = useState("hidden");
+
+  const toggleModal = () => {
+    setModalStatus(modalStatus === "hidden" ? "shown" : "hidden");
+  };
+
   return (
     <>
-      <div className="bg-accentDark h-screen w-72 flex flex-col">
-        <button className="bg-backgroundDark rounded-sm h-6 w-[90%] line-clamp-1 text-lightGray my-3 mx-auto">
-          Rechercher/lancer une conversation
-        </button>
-        <div className="bg-backgroundDark w-full h-[0.1rem] mx-auto mb-2"></div>
+      <div className="bg-accentDark h-screen w-72 min-w-72 flex flex-col">
+        <div className="h-20 min-h-20 flex items-center justify-center border-b-2 border-backgroundDark mb-2">
+          <button className="bg-backgroundDark rounded-md h-8 w-[90%] line-clamp-1 text-lightGray mx-auto">
+            Rechercher/lancer une conversation
+          </button>
+        </div>
 
-        <div
-          id="friendsContainer"
-          className=" overflow-auto h-full no-scrollbar"
-        >
+        <div id="friendsContainer" className=" overflow-auto no-scrollbar">
           <div
             id="FriendsButton"
             className="w-[90%] h-10 hover:bg-accentRed rounded-md mx-auto flex items-center group cursor-pointer"
@@ -68,10 +73,14 @@ export default function SideFriend() {
               Boutique
             </p>
           </div>
-          <button className="flex justify-between w-[90%] mx-auto mb-2 px-2 text-lightGray hover:text-offWhite">
+          <button
+            onClick={toggleModal}
+            className="flex justify-between w-[90%] mx-auto mb-2 px-2 text-lightGray hover:text-offWhite"
+          >
             <p>Message privés</p>
             <p>+</p>
           </button>
+          <PrivateMessageModal status={modalStatus} />
           {privateMessage.map((privateMessage, index) => (
             <FriendChat key={index} name={privateMessage.name} />
           ))}
